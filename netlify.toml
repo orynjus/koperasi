@@ -1,0 +1,8 @@
+# Konfigurasi deploy Netlify untuk aplikasi Next.js Koperasi Sekolah.
+# Netlify otomatis mendeteksi Next.js dan memasang Next.js Runtime.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
